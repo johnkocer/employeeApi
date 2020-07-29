@@ -17,6 +17,7 @@ namespace EmployeeWebApi.Controllers
             _employeeService = employeeService;
         }
 
+        [Route("/api/EmployeesById/{id}")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> Get()
         {
